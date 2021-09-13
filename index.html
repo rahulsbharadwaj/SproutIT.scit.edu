@@ -26,7 +26,7 @@
 	<link href="css/style.css" rel="stylesheet">
 
 	<!-- FAVICON -->
-	<link href="images/ITELF_white.png" rel="shortcut icon">
+	<link href="images/ITELF_white.png" type="image/gif" rel="shortcut icon">
 	<style>
 		html {
 			scroll-behavior: smooth;
@@ -40,13 +40,11 @@
 	<!--========================================
 =            Navigation Section            =
 =========================================-->
-
+<!--
 	<nav class="navbar main-nav border-less fixed-top navbar-expand-lg p-0">
 		<div class="container-fluid p-0">
-			<!-- logo -->
 			<a class="navbar-brand" href="index.html">
 				<img src="images/scit-lg.png" class="float-left" style="" width="120" height="auto" alt="logo">
-				<!--	<img src="images/itelf_black.png" class="float-left" style=""  width="70" height="auto" alt="logo"> -->
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
 				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -79,8 +77,50 @@
 				</ul>
 			</div>
 		</div>
-	</nav>
-
+	</nav> -->
+	
+	<!--Nav bar own -->
+	<nav class="navbar navbar-expand-md bg-light text-dark  sticky-top py-3">
+  <a class="navbar-brand" href="#">
+	<div class="row">
+		<div class="col-xs-6">
+			<img alt="logo" style="width:170px;"  height="auto" src="images/scit-lg.png" class="float-left" href="#">
+		</div>
+		<br>
+		<div class="col-xs-6">
+			<img alt="logo" style="width:90px;padding-left:20px"  height="auto"src="images/itelf_black.png" class="float-left" href="#">
+		</div>
+	</div>
+  </a>
+  <button class="navbar-toggler " type="button"  data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"  >
+		<i class="fa fa-bars" style="font-size:24px"></i>
+	</span>
+  </button>
+    <div class="collapse navbar-collapse "  id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="font-size:20px;padding:10px">Home&nbsp;&nbsp;</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about" style="font-size:20px;padding:10px">About&nbsp;&nbsp;</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"href="#events" style="font-size:20px;padding:10px">Events&nbsp;&nbsp;</a>
+      </li>   
+      <li class="nav-item">
+        <a class="nav-link"href="#speaker" style="font-size:20px;padding:10px">Speaker&nbsp;&nbsp;</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"href="#sponsors" style="font-size:20px">Sponsors&nbsp;&nbsp;</a>
+      </li>	  
+	  <li class="nav-item">
+        <a class="nav-link"href="#contact" style="font-size:20px">Contact</a>
+      </li>	  
+    </ul>
+  </div>  
+</nav>
+	<!-- end Nav bar own -->
 	<!--====  End of Navigation Section  ====-->
 
 
@@ -114,9 +154,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 mx-auto">
-					<div style="text-align:center">
+					<div style="text-align:center;justify-content: center">
 						<p style="font-family: Arial">
-						<h4>AboutITELF</h4><br>
+						<div style="text-align:center"><h4>AboutITELF</h4></div><br>
 						iTELF, is the Entrepreneurship Cell of SCIT which provides a dais for upcoming IT Entrepreneurs
 						and Leaders to explore the world of start-ups, exchange ideas, foster and enhance their
 						leadership skills. This forum helps the entrepreneurs of today to metamorphose into victorious
@@ -132,9 +172,9 @@
 				<div class="col-md-12 mx-auto">
 					<div class="row">
 						<div class="col-md-6 mx-auto">
-							<div style="text-align:center">
+							<div style="justify-content: center">
 								<p style="font-family: Arial">
-								<h5>About Sprout IT</h5><br>
+								<div style="text-align:center"><h5>About Sprout IT</h5></div><br>
 								Leadership is about being poised, motivated and a lot more. You need a team with an
 								astute mindset to win through the challenges and reach your goals. We all have a spark
 								to be the best. At Sprout'IT you are pushed to your limits to vie and and be the crème
@@ -143,9 +183,9 @@
 							</div>
 						</div>
 						<div class="col-md-6 mx-auto">
-							<div style="text-align:center">
+							<div style="justify-content: center">
 								<p style="font-family: Arial">
-								<h5>About Winds of Intuition</h5><br>
+								<div style="text-align:center"><h5>About Winds of Intuition</h5></div><br>
 								"Winds of Intuition" celebrates the intuitive skills of an entrepreneur. An event that
 								makes you think about your perception in the light of your intuition and learn how to
 								put your faith in your sixth sense from the choicest entrepreneurial experts in the
@@ -172,8 +212,6 @@
 				<div class="col-12">
 					<div class="section-title">
 						<h3>Event</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusm tempor incididunt ut
-							labore</p>
 					</div>
 				</div>
 			</div>
@@ -614,9 +652,7 @@
 				<div class="col-12">
 					<!-- Section Title -->
 					<div class="section-title white">
-						<h3>Who <span class="alternate">Speaking?</span></h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusm tempor incididunt ut
-							labore</p>
+						<h3><span class="alternate">Speakers</span></h3>
 					</div>
 				</div>
 			</div>
@@ -804,17 +840,12 @@
 				<div class="col-12">
 					<div class="section-title">
 						<h3>Our <span class="alternate">Sponsors</span></h3>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusm tempor incididunt ut
-							labore dolore</p>
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-12">
 					<!-- Title -->
-					<div class="sponsor-title text-center">
-						<h5>Platinum Sponsors</h5>
-					</div>
 					<div class="block text-center">
 						<!-- Sponsors image list -->
 						<ul class="list-inline sponsors-list">
@@ -852,10 +883,6 @@
 							</li>
 						</ul>
 					</div>
-					<!-- Title -->
-					<div class="sponsor-title text-center">
-						<h5>Gold Sponsors</h5>
-					</div>
 					<div class="block text-center">
 						<!-- Sponsors image list -->
 						<ul class="list-inline sponsors-list">
@@ -884,9 +911,6 @@
 								</div>
 							</li>
 						</ul>
-					</div>
-					<div class="sponsor-btn text-center">
-						<a href="#" class="btn btn-main-md">Become a sponsor</a>
 					</div>
 				</div>
 			</div>
@@ -923,7 +947,7 @@
 				<div class="col-md-12">
 					<div class="block text-center">
 						<div class="footer-logo">
-							<img src="images/footer-logo.png" alt="logo" class="img-fluid">
+							<img src="images/ITELF_white.png" style="width:170px;" alt="logo" class="img-fluid">
 						</div>
 						<ul class="social-links-footer list-inline">
 							<li class="list-inline-item">
